@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pencarian dan Penambangan Web - 2&nbsp; Tugas Crawling_berita_Kompas dan ekstrak kata kunci</title>
+<title>Pencarian dan Penambangan Web - 3&nbsp; Tugas Crawling_berita_Kompas dan ekstrak kata kunci</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
-<link href="./Crawling_berita_Kompas.html" rel="prev">
+<link href="./RingkasanBeritaKompas.html" rel="next">
+<link href="./CrawlNews_Kategori.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -113,7 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Crawling_EkstraksiKataKunci.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tugas Crawling_berita_Kompas dan ekstrak kata kunci</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Crawling_EkstraksiKataKunci.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tugas Crawling_berita_Kompas dan ekstrak kata kunci</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -146,20 +146,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Crawling_berita_Kompas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tugas Crawling_berita_Kompas</span></span></a>
+  <a href="./Preprocessing_text_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preprocessing_text_data.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CrawlNews_Kategori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Crawl Berita Kompas</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Crawling_EkstraksiKataKunci.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tugas Crawling_berita_Kompas dan ekstrak kata kunci</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tugas Crawling_berita_Kompas dan ekstrak kata kunci</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./RingkasanBeritaKompas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meringkas Berita</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -178,13 +190,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#menginstall-dan-mengimport-library-yang-dibutuhkan" id="toc-menginstall-dan-mengimport-library-yang-dibutuhkan" class="nav-link active" data-scroll-target="#menginstall-dan-mengimport-library-yang-dibutuhkan"><span class="header-section-number">2.1</span> Menginstall dan mengimport library yang dibutuhkan</a></li>
-  <li><a href="#web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive" id="toc-web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive" class="nav-link" data-scroll-target="#web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive"><span class="header-section-number">2.2</span> Web Scraping Berita Kompas dan Penyimpanan ke Google Drive</a></li>
-  <li><a href="#import-dan-membaca-data-csv" id="toc-import-dan-membaca-data-csv" class="nav-link" data-scroll-target="#import-dan-membaca-data-csv"><span class="header-section-number">2.3</span> Import dan Membaca Data CSV</a></li>
-  <li><a href="#mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis" id="toc-mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis" class="nav-link" data-scroll-target="#mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis"><span class="header-section-number">2.4</span> Mengambil salah satu berita untuk menjadi sampel data yang akan dianalisis</a></li>
-  <li><a href="#pra-pemrosesan-teks-preprocessing" id="toc-pra-pemrosesan-teks-preprocessing" class="nav-link" data-scroll-target="#pra-pemrosesan-teks-preprocessing"><span class="header-section-number">2.5</span> Pra-pemrosesan Teks / Preprocessing</a></li>
-  <li><a href="#perhitungan-kemiripan-kosinus" id="toc-perhitungan-kemiripan-kosinus" class="nav-link" data-scroll-target="#perhitungan-kemiripan-kosinus"><span class="header-section-number">2.6</span> Perhitungan Kemiripan Kosinus</a></li>
-  <li><a href="#visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity" id="toc-visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity" class="nav-link" data-scroll-target="#visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity"><span class="header-section-number">2.7</span> Visualisasi Hubungan Antar Kalimat Menggunakan Graf (Graph) berdasarkan Cosine Similarity</a></li>
+  <li><a href="#menginstall-dan-mengimport-library-yang-dibutuhkan" id="toc-menginstall-dan-mengimport-library-yang-dibutuhkan" class="nav-link active" data-scroll-target="#menginstall-dan-mengimport-library-yang-dibutuhkan"><span class="header-section-number">3.1</span> Menginstall dan mengimport library yang dibutuhkan</a></li>
+  <li><a href="#web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive" id="toc-web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive" class="nav-link" data-scroll-target="#web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive"><span class="header-section-number">3.2</span> Web Scraping Berita Kompas dan Penyimpanan ke Google Drive</a></li>
+  <li><a href="#import-dan-membaca-data-csv" id="toc-import-dan-membaca-data-csv" class="nav-link" data-scroll-target="#import-dan-membaca-data-csv"><span class="header-section-number">3.3</span> Import dan Membaca Data CSV</a></li>
+  <li><a href="#mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis" id="toc-mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis" class="nav-link" data-scroll-target="#mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis"><span class="header-section-number">3.4</span> Mengambil salah satu berita untuk menjadi sampel data yang akan dianalisis</a></li>
+  <li><a href="#pra-pemrosesan-teks-preprocessing" id="toc-pra-pemrosesan-teks-preprocessing" class="nav-link" data-scroll-target="#pra-pemrosesan-teks-preprocessing"><span class="header-section-number">3.5</span> Pra-pemrosesan Teks / Preprocessing</a></li>
+  <li><a href="#perhitungan-kemiripan-kosinus" id="toc-perhitungan-kemiripan-kosinus" class="nav-link" data-scroll-target="#perhitungan-kemiripan-kosinus"><span class="header-section-number">3.6</span> Perhitungan Kemiripan Kosinus</a></li>
+  <li><a href="#visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity" id="toc-visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity" class="nav-link" data-scroll-target="#visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity"><span class="header-section-number">3.7</span> Visualisasi Hubungan Antar Kalimat Menggunakan Graf (Graph) berdasarkan Cosine Similarity</a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +205,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tugas Crawling_berita_Kompas dan ekstrak kata kunci</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tugas Crawling_berita_Kompas dan ekstrak kata kunci</span></h1>
 </div>
 
 
@@ -213,8 +225,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>NIM : 210411100234</li>
 <li>Kelas : Penambangan dan Pencarian Web B</li>
 </ul>
-<section id="menginstall-dan-mengimport-library-yang-dibutuhkan" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="menginstall-dan-mengimport-library-yang-dibutuhkan"><span class="header-section-number">2.1</span> Menginstall dan mengimport library yang dibutuhkan</h2>
+<section id="menginstall-dan-mengimport-library-yang-dibutuhkan" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="menginstall-dan-mengimport-library-yang-dibutuhkan"><span class="header-section-number">3.1</span> Menginstall dan mengimport library yang dibutuhkan</h2>
 <p>Libraries yang Digunakan * BeautifulSoup (bs4): Library untuk melakukan web scraping dan ekstraksi data HTML. * Requests: Library untuk membuat permintaan HTTP ke situs web dan mendapatkan konten halaman. * Pandas (pd): Library untuk mengelola dan menyimpan data dalam format CSV.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup <span class="im">as</span> soup</span>
@@ -245,8 +257,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive"><span class="header-section-number">2.2</span> Web Scraping Berita Kompas dan Penyimpanan ke Google Drive</h2>
+<section id="web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="web-scraping-berita-kompas-dan-penyimpanan-ke-google-drive"><span class="header-section-number">3.2</span> Web Scraping Berita Kompas dan Penyimpanan ke Google Drive</h2>
 <p>Kode ini menggunakan teknik web scraping untuk mengumpulkan judul dan isi berita dari 200 halaman indeks situs Kompas.com. Berikut adalah penjelasan komponen utama dari kode tersebut:</p>
 <p><strong>Proses Web Scraping dan menyimpan data</strong> * Iterasi sebanyak 5 (karna yang akan dipreprocessing kali ini cuman 1 berita) halaman indeks(tergantung indeks pada website) di situs Kompas.com. * Untuk setiap halaman, melakukan permintaan HTTP dan mendapatkan konten HTML. * Menggunakan BeautifulSoup untuk mengekstrak daftar berita dari halaman tersebut. * Untuk setiap berita, mengakses halaman individu untuk mengambil judul dan isi berita. * Data judul dan isi berita ditambahkan ke dalam dictionary csv. Penyimpanan Data * Setelah proses scraping selesai, data disimpan dalam file CSV dengan nama “Data_BeritaKompas.csv” terlebih dahulu di environment Colab. * File CSV tersebut disalin ke dalam Google Drive pada path “/content/drive/My Drive/Penambangan WEB/Data/”.</p>
 <div class="cell" data-outputid="c0aa35d0-17dd-4ed6-94af-81b0897fb6ba">
@@ -284,8 +296,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="import-dan-membaca-data-csv" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="import-dan-membaca-data-csv"><span class="header-section-number">2.3</span> Import dan Membaca Data CSV</h2>
+<section id="import-dan-membaca-data-csv" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="import-dan-membaca-data-csv"><span class="header-section-number">3.3</span> Import dan Membaca Data CSV</h2>
 <p>Menggunakan Pandas untuk membaca file CSV yang telah disimpan sebelumnya. File CSV tersebut berisi data judul dan isi berita dari Kompas.com yang telah di-web scrape sebelumnya, lalu menampilkan data yang telah dibaca dari file CSV dalam bentuk DataFrame untuk dapat dianalisis lebih lanjut.</p>
 <div class="cell" data-outputid="debf61e0-7cdb-4e24-fb3f-68374c4da314">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> drive</span>
@@ -617,8 +629,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis"><span class="header-section-number">2.4</span> Mengambil salah satu berita untuk menjadi sampel data yang akan dianalisis</h2>
+<section id="mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="mengambil-salah-satu-berita-untuk-menjadi-sampel-data-yang-akan-dianalisis"><span class="header-section-number">3.4</span> Mengambil salah satu berita untuk menjadi sampel data yang akan dianalisis</h2>
 <div class="cell" data-outputid="18b50a26-d208-40e3-ff45-2e757d0eed9f">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>berita <span class="op">=</span> df[<span class="st">'Berita'</span>].iloc[<span class="dv">15</span>]</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>berita</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -627,8 +639,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="pra-pemrosesan-teks-preprocessing" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="pra-pemrosesan-teks-preprocessing"><span class="header-section-number">2.5</span> Pra-pemrosesan Teks / Preprocessing</h2>
+<section id="pra-pemrosesan-teks-preprocessing" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="pra-pemrosesan-teks-preprocessing"><span class="header-section-number">3.5</span> Pra-pemrosesan Teks / Preprocessing</h2>
 <p>Mengambil teks sebagai input dan melakukan beberapa langkah pra-pemrosesan pada teks dalam bahasa Indonesia. Langkah-langkah tersebut mencakup penghapusan angka, pembersihan karakter khusus, konversi teks ke huruf kecil, penghapusan kata-kata umum (stopwords), dan penggabungan kata-kata yang telah melalui proses sebelumnya. Tujuannya adalah membersihkan dan mempersiapkan teks agar dapat digunakan lebih lanjut dalam analisis atau pemrosesan lanjutan.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> preprocessing(text):</span>
@@ -1197,8 +1209,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="perhitungan-kemiripan-kosinus" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="perhitungan-kemiripan-kosinus"><span class="header-section-number">2.6</span> Perhitungan Kemiripan Kosinus</h2>
+<section id="perhitungan-kemiripan-kosinus" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="perhitungan-kemiripan-kosinus"><span class="header-section-number">3.6</span> Perhitungan Kemiripan Kosinus</h2>
 <p>Menghitung kemiripan kosinus antara semua pasangan kalimat menggunakan matriks TF-IDF yang telah dihasilkan sebelumnya. Kemudian, hasil kemiripan kosinus tersebut disimpan dalam DataFrame untuk kemudahan analisis.</p>
 <p><strong>Rumus Perhitungan Kemiripan Kosinus:</strong> * Untuk dua vektor A dan B, kemiripan kosinus dihitung dengan rumus <span class="math display">\[ \text{Similarity}(A, B) = \frac{{A \cdot B}}{{\|A\| \cdot \|B\|}} \]</span></p>
 <ul>
@@ -1723,8 +1735,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity"><span class="header-section-number">2.7</span> Visualisasi Hubungan Antar Kalimat Menggunakan Graf (Graph) berdasarkan Cosine Similarity</h2>
+<section id="visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="visualisasi-hubungan-antar-kalimat-menggunakan-graf-graph-berdasarkan-cosine-similarity"><span class="header-section-number">3.7</span> Visualisasi Hubungan Antar Kalimat Menggunakan Graf (Graph) berdasarkan Cosine Similarity</h2>
 <p>Membuat graf yang merepresentasikan hubungan antara kalimat-kalimat berdasarkan nilai cosine similarity. Setiap kalimat direpresentasikan sebagai node, dan garis yang menghubungkan dua node menunjukkan tingkat kemiripan antara kalimat tersebut. Semakin panjang dan tebal garis, semakin tinggi tingkat kemiripan antara dua kalimat. Graf ini membantu memvisualisasikan struktur hubungan antar kalimat dalam teks.</p>
 <div class="cell" data-outputid="b03207e2-4e9c-4fe1-c11e-0705ff73ab87">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.DiGraph()</span>
@@ -2344,13 +2356,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Crawling_berita_Kompas.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tugas Crawling_berita_Kompas</span></span>
+      <a href="./CrawlNews_Kategori.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Crawl Berita Kompas</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./RingkasanBeritaKompas.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meringkas Berita</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
